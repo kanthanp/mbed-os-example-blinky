@@ -6,9 +6,11 @@
 #include "mbed.h"
 #include "stats_report.h"
 
+// KP: changed to LED2
 DigitalOut led1(LED2);
 
-#define SLEEP_TIME                  500 // (msec)
+// KP: increased sleep time from 500 to 1000
+#define SLEEP_TIME                  1000 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
 
 // main() runs in its own thread in the OS
