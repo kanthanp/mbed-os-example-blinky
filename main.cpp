@@ -6,11 +6,11 @@
 #include "mbed.h"
 #include "stats_report.h"
 
-// KP: changed to LED2
-DigitalOut led1(LED2);
+// KP: changed to LED_BLUE
+DigitalOut led1(LED_BLUE);
 
-// KP: increased sleep time from 500 to 1000
-#define SLEEP_TIME                  1000 // (msec)
+// KP: increased sleep time from 1000 to 2000
+#define SLEEP_TIME                  2000 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
 
 // main() runs in its own thread in the OS
@@ -20,9 +20,11 @@ int main()
 
     int count = 0;
     while (true) {
-        // Blink LED and wait 0.5 seconds
+        // Blink LED and wait 2 seconds
         led1 = !led1;
         wait_ms(SLEEP_TIME);
+        // KP: print blinky message in Serial Monitor
+        printf("Blue LED is blinking on device every 2 seconds! \n");
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
