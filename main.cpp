@@ -21,7 +21,7 @@ int main()
         // Blink LED and wait 0.5 seconds
         led1 = !led1;
         wait_ms(SLEEP_TIME);
-        printf("Green LED blinking!!");
+        printf("Green LED blinking every 500ms!!");
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
