@@ -6,8 +6,6 @@
 #include "mbed.h"
 #include "stats_report.h"
 
-printf("Merged changes from master branch has been carried out \n");
-
 DigitalOut led1(LED_GREEN);
 
 #define SLEEP_TIME                  7000 // (msec)
