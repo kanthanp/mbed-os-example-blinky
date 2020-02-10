@@ -6,7 +6,7 @@
 #include "mbed.h"
 #include "stats_report.h"
 
-DigitalOut led1(LED_RED);
+DigitalOut led1(LED1);
 
 #define SLEEP_TIME                 2000 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
@@ -22,8 +22,7 @@ int main()
         // Blink LED and wait 2 seconds
         led1 = !led1;
         wait_ms(SLEEP_TIME);
-        // KP: print blinky message in Serial Monitor
-        printf("Red LED is blinking on device every 2 seconds!!! \n");
+        printf("LED1 is blinking on device every 2 seconds!!! \n");
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
