@@ -3,7 +3,7 @@
         "*": {
             "platform.stack-stats-enabled": false,
             "platform.heap-stats-enabled": false,
-            "platform.cpu-stats-enabled": false,
+            "platform.cpu-stats-enabled": true,
             "platform.thread-stats-enabled": false,
             "platform.sys-stats-enabled": false
         }
