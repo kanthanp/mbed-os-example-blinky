@@ -1,1 +1,1 @@
-Testing SCM Git commit operation using 0.9.0 build1
+Testing SCM Git commit operation using 0.9.0 build
