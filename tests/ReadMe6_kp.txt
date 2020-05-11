@@ -1,0 +1,1 @@
+Testing SCM Git using MS Build 1.0.0 RC1
