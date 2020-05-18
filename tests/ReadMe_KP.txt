@@ -1,0 +1,1 @@
+Testing SCM on Linux with Mbed Studio 1.0.0 RC2 build
