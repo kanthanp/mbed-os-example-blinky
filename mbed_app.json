@@ -2,7 +2,7 @@
     "target_overrides": {
         "*": {
             "platform.stack-stats-enabled": true,
-            "platform.heap-stats-enabled": false,
+            "platform.heap-stats-enabled": true,
             "platform.cpu-stats-enabled": false,
             "platform.thread-stats-enabled": false,
             "platform.sys-stats-enabled": false
