@@ -1,0 +1,2 @@
+Testing SCM Git commit operation
+22/05/20
