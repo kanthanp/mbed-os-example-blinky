@@ -22,7 +22,9 @@ int main()
         // Blink LED and wait 1 second
         led1 = !led1;
         wait_ms(SLEEP_TIME);
-        printf("Green is blinking on device every 1 sec!! \n");
+
+        // KP: print blinky message in Serial Monitor
+        printf("Green LED is blinking on device every 1000 milliseconds!!! \n");
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
