@@ -3,10 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+#include "PinNames.h"
 #include "mbed.h"
 #include "stats_report.h"
 
-DigitalOut led1(LED_GREEN);
+DigitalOut led1(LED_BLUE);
 
 #define SLEEP_TIME                 3500 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
@@ -22,7 +23,7 @@ int main()
         // Blink LED and wait 3.5 seconds
         led1 = !led1;
         wait_ms(SLEEP_TIME);
-        printf("Green LED is blinking on device every 3.5 seconds!! \n");
+        printf("BLUE LED is blinking on device every 3.5 seconds!! \n");
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
