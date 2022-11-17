@@ -1,5 +1,5 @@
 Test: SCM Git commit & push operations
-System: MacOS Catalina
-MS version: 1.3.0 RC1
-Date: 06/10/20
+System: MacOS Monterey
+KSC version: 1.5.51 (Theia 1.27 branch)
+Date: 17/11/22
 Tester: Kanth
