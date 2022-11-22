@@ -7,9 +7,9 @@
 #include "mbed.h"
 #include "stats_report.h"
 
-DigitalOut led1(LED3);
+DigitalOut led1(LED_BLUE);
 
-#define SLEEP_TIME                 2000 // (msec)
+#define SLEEP_TIME                  10000 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
 
 // main() runs in its own thread in the OS
@@ -20,10 +20,10 @@ int main()
     int count = 0;
     while (true) {
 
-        // Blink LED and wait 2 seconds
+        // Blink LED and wait 10 seconds
         led1 = !led1;
         wait_ms(SLEEP_TIME);
-        printf("LED3 is blinking on device every 2 seconds!! \n");
+        printf("BLUE LED blinking every 10000ms!!");
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
