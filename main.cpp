@@ -24,7 +24,7 @@ int main()
         led1 = !led1;
         wait_ms(SLEEP_TIME);
         printf("BLUE LED blinking every 5000ms!!");
-        printf("Testing KSC Next Mbed flavour!!");
+        printf("Testing KSC Next Mbed flavour in preview environment!!");
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
